@@ -17,12 +17,16 @@ use Symfony\Component\String\Slugger\SluggerInterface;
 class FileUploaderService
 {
     /* -------------------------------------------------------------------------- */
-    /*                                Les Attributs                               */
+    /*                                Les attributs                               */
     /* -------------------------------------------------------------------------- */
 
     private string $targetDirectory;
     private SluggerInterface $slugger;
     private Filesystem $fileSystem;
+    
+    /* -------------------------------------------------------------------------- */
+    /*                           Les méthodes spéciales                           */
+    /* -------------------------------------------------------------------------- */
 
     /**
      * Le constructeur accueille un répertoire cible, un slugger et un système de fichiers.
@@ -94,7 +98,7 @@ class FileUploaderService
     }
 
     /* -------------------------------------------------------------------------- */
-    /*                            Les méthodes Privées                            */
+    /*                            Les méthodes privées                            */
     /* -------------------------------------------------------------------------- */
 
     /**
