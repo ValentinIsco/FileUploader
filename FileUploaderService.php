@@ -59,8 +59,8 @@ class FileUploaderService
     }
 
     /**
-     * Si le fichier n'est pas nul, le télécharge et supprimez l'ancien fichier.
-     * Si le fichier est nul, renvoyez l'ancien nom de fichier.
+     * Si le fichier n'est pas nul, le télécharge et supprime l'ancien fichier.
+     * Si le fichier est nul, renvoie l'ancien nom de fichier.
      * 
      * @param UploadedFile|null $file Le fichier qui a été téléchargé.
      * @param string $fileName Le nom du fichier à mettre à jour.
